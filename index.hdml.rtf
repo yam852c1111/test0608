@@ -1,0 +1,500 @@
+{\rtf1\ansi\ansicpg950\cocoartf2708
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="zh-TW" class="scroll-smooth">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>MOGOLS | Takuma Fujisaki Official Site Inspired Portfolio</title>\
+    \
+    <!-- Tailwind CSS -->\
+    <script src="https://cdn.tailwindcss.com"></script>\
+    \
+    <!-- Google Fonts: Inter for sans, Playfair Display/Georgia for italic serif links -->\
+    <link rel="preconnect" href="https://fonts.googleapis.com">\
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">\
+\
+    <!-- CSS Styling for exact print-like look -->\
+    <style>\
+        body \{\
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;\
+            background-color: #ffffff;\
+            color: #000000;\
+            -webkit-font-smoothing: antialiased;\
+        \}\
+\
+        /* Serif font style for italic links matching the screenshot */\
+        .serif-italic \{\
+            font-family: 'Playfair Display', Georgia, serif;\
+            font-style: italic;\
+        \}\
+\
+        /* Image hover zoom effect without affecting container bounds */\
+        .img-container \{\
+            overflow: hidden;\
+            position: relative;\
+        \}\
+        \
+        .img-container img \{\
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);\
+        \}\
+\
+        .img-container:hover img \{\
+            transform: scale(1.03);\
+        \}\
+\
+        /* Custom scrollbar for minimalist clean look */\
+        ::-webkit-scrollbar \{\
+            width: 6px;\
+            height: 6px;\
+        \}\
+        ::-webkit-scrollbar-track \{\
+            background: #ffffff;\
+        \}\
+        ::-webkit-scrollbar-thumb \{\
+            background: #e5e5e5;\
+            border-radius: 0px;\
+        \}\
+        ::-webkit-scrollbar-thumb:hover \{\
+            background: #cccccc;\
+        \}\
+    </style>\
+</head>\
+<body class="bg-white min-h-screen text-black antialiased selection:bg-black selection:text-white pb-32">\
+\
+    <!-- Brand Header -->\
+    <header class="w-full bg-white pt-8 pb-4 px-4 md:px-12 lg:px-16 border-b border-transparent z-40">\
+        <div class="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-6 md:gap-4">\
+            \
+            <!-- Left Side Logo and Subtitle -->\
+            <div class="flex flex-col md:flex-row items-baseline gap-2">\
+                <a href="#" class="block select-none">\
+                    <h1 class="text-4xl font-extrabold tracking-tight text-black font-sans leading-none">MOGOLS</h1>\
+                </a>\
+                <span class="text-[8px] tracking-widest text-neutral-400 font-sans uppercase">\
+                    TAKUMA FUJISAKI OFFICIAL SITE\
+                </span>\
+            </div>\
+\
+            <!-- Middle Navigation Links -->\
+            <nav class="flex flex-wrap gap-x-6 gap-y-2 text-[11px] tracking-[0.2em] font-bold text-black uppercase font-sans border-t border-neutral-100 md:border-none pt-4 md:pt-0 w-full md:w-auto">\
+                <a href="#portfolio" class="hover:opacity-50 transition-opacity border-b-2 border-black pb-1">MOGOLART</a>\
+                <a href="#about" class="hover:opacity-50 transition-opacity pb-1">DESIGN</a>\
+                <a href="#profile" class="hover:opacity-50 transition-opacity pb-1">TAKUMA FUJISAKI</a>\
+                <a href="#contact" class="hover:opacity-50 transition-opacity pb-1">CONTACT</a>\
+            </nav>\
+\
+            <!-- Right Side Social/Blog Links in Serif Italic -->\
+            <div class="flex gap-4 text-xs tracking-wider text-black serif-italic border-t border-neutral-100 md:border-none pt-2 md:pt-0 w-full md:w-auto md:justify-end">\
+                <a href="#" class="hover:opacity-50 transition-opacity">Blog</a>\
+                <a href="#" class="hover:opacity-50 transition-opacity">Twitter</a>\
+                <a href="#" class="hover:opacity-50 transition-opacity">Instagram</a>\
+            </div>\
+        </div>\
+    </header>\
+\
+    <main class="w-full px-4 md:px-12 lg:px-16 mt-6">\
+        <div class="max-w-[1400px] mx-auto relative">\
+            \
+            <!-- Floating Mascot Sticker mimicking the official site sticker -->\
+            <!-- Positioned overlapping the top-left of the first artwork container -->\
+            <div class="absolute -top-12 left-4 md:left-8 z-30 pointer-events-none select-none animate-bounce duration-1000" style="animation-duration: 3s;">\
+                <!-- An elegant hand-drawn sticker using SVG inspired by the user's artwork style -->\
+                <svg width="70" height="70" viewBox="0 0 100 100" class="drop-shadow-sm filter">\
+                    <!-- Outer Die-Cut White Border -->\
+                    <path d="M 50,5 Q 75,5 85,25 Q 95,50 85,75 Q 75,95 50,95 Q 25,95 15,75 Q 5,50 15,25 Q 25,5 50,5" fill="#ffffff" stroke="#e5e5e5" stroke-width="2" />\
+                    <!-- Inside colorful character (A stylized cute creature from their style) -->\
+                    <circle cx="50" cy="50" r="38" fill="#ff4da6" />\
+                    <!-- Eye patches -->\
+                    <circle cx="40" cy="45" r="12" fill="#fff" />\
+                    <circle cx="60" cy="45" r="12" fill="#fff" />\
+                    <circle cx="40" cy="45" r="6" fill="#000" />\
+                    <circle cx="60" cy="45" r="6" fill="#000" />\
+                    <!-- Rosy cheeks -->\
+                    <circle cx="30" cy="60" r="4" fill="#ffd11a" />\
+                    <circle cx="70" cy="60" r="4" fill="#ffd11a" />\
+                    <!-- Tiny smile -->\
+                    <path d="M 45,62 Q 50,66 55,62" stroke="#000" stroke-width="3" fill="none" stroke-linecap="round" />\
+                    <!-- Colorful fringe spikes around the head -->\
+                    <path d="M 30,15 L 25,5 M 42,10 L 42,0 M 58,10 L 58,0 M 70,15 L 75,5 M 15,35 L 5,30 M 85,35 L 95,30" stroke="#ffd11a" stroke-width="4" stroke-linecap="round" />\
+                </svg>\
+            </div>\
+\
+            <!-- Dynamic Rhythm Grid Container -->\
+            <!-- The Javascript below will load default items adhering to: Row 1 (1 Col), Row 2 (4 Col), Row 3 (2 Col), Row 4 (1 Col) -->\
+            <div id="artwork-grid" class="flex flex-col gap-1 md:gap-2">\
+                <!-- Artworks are injected here by JavaScript -->\
+            </div>\
+\
+            <!-- Minimalist Pagination / Info Banner -->\
+            <div class="mt-8 flex justify-between items-center text-[10px] tracking-[0.3em] uppercase text-neutral-400 font-sans border-t border-neutral-100 pt-6">\
+                <span>Displaying 8 Curated Artifacts</span>\
+                <button onclick="toggleAdminPanel()" class="hover:text-black transition-colors font-bold flex items-center gap-1.5 border border-neutral-200 px-3 py-1">\
+                    <span class="text-xs">+</span> Add Artwork to Grid\
+                </button>\
+            </div>\
+\
+        </div>\
+    </main>\
+\
+    <section id="admin-panel" class="hidden fixed bottom-0 left-0 right-0 bg-white border-t-2 border-black p-6 md:p-8 z-50 shadow-2xl">\
+        <div class="max-w-xl mx-auto space-y-6">\
+            <div class="flex justify-between items-center border-b border-neutral-100 pb-3">\
+                <h3 class="font-sans text-xs font-bold tracking-[0.3em] uppercase">Studio Desk / \uc0\u26032 \u22686 \u20316 \u21697 \u32232 \u30446 </h3>\
+                <button onclick="toggleAdminPanel()" class="text-xs tracking-widest text-neutral-400 hover:text-black uppercase">\uc0\u10005  Close</button>\
+            </div>\
+            \
+            <form onsubmit="handleNewArtwork(event)" class="space-y-4 text-xs font-sans">\
+                <!-- Image input choices -->\
+                <div class="space-y-2">\
+                    <label class="block font-bold tracking-wider">CHOOSE METHOD / \uc0\u36984 \u25799 \u26041 \u24335 </label>\
+                    <div class="flex gap-4">\
+                        <label class="flex items-center gap-2 cursor-pointer">\
+                            <input type="radio" name="input_type" value="file" checked onchange="switchInputType('file')" class="accent-black">\
+                            <span>Upload Local File / \uc0\u26412 \u22320 \u25991 \u20214 \u19978 \u20659 </span>\
+                        </label>\
+                        <label class="flex items-center gap-2 cursor-pointer">\
+                            <input type="radio" name="input_type" value="url" onchange="switchInputType('url')" class="accent-black">\
+                            <span>Image URL / \uc0\u32178 \u36335 \u22294 \u29255 \u32178 \u22336 </span>\
+                        </label>\
+                    </div>\
+                </div>\
+\
+                <!-- Local File Input Area -->\
+                <div id="file-input-wrapper" class="border-2 border-dashed border-neutral-200 p-4 text-center hover:border-black transition-colors relative">\
+                    <input type="file" id="art-file" accept="image/*" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer" onchange="handleFileSelect(event)">\
+                    <div id="drag-text" class="text-neutral-400 font-light">\
+                        Drag and drop file here or <span class="underline text-black font-normal">Browse files</span>\
+                    </div>\
+                    <img id="file-preview" class="hidden mx-auto max-h-32 mt-2 object-contain border border-neutral-100">\
+                </div>\
+\
+                <!-- URL Input Area (Hidden initially) -->\
+                <div id="url-input-wrapper" class="hidden space-y-1">\
+                    <input type="url" id="art-url" placeholder="https://example.com/artwork.jpg" class="w-full bg-neutral-50 border border-neutral-200 p-2.5 focus:outline-none focus:border-black font-sans text-xs">\
+                </div>\
+\
+                <!-- Caption / Title Input -->\
+                <div class="space-y-1">\
+                    <label class="block font-bold tracking-wider">ARTWORK TITLE / \uc0\u20316 \u21697 \u21517 \u31281 </label>\
+                    <input type="text" id="art-title" required placeholder="e.g. Dream Scape / \uc0\u22818 \u22659 \u19990 \u30028 " class="w-full bg-neutral-50 border border-neutral-200 p-2.5 focus:outline-none focus:border-black font-sans text-xs">\
+                </div>\
+\
+                <!-- Layout Focus Preference -->\
+                <div class="grid grid-cols-2 gap-4">\
+                    <div class="space-y-1">\
+                        <label class="block font-bold tracking-wider">FOCUS ALIGNMENT X</label>\
+                        <select id="art-align-x" class="w-full bg-neutral-50 border border-neutral-200 p-2 focus:outline-none focus:border-black">\
+                            <option value="center">Center</option>\
+                            <option value="left">Left</option>\
+                            <option value="right">Right</option>\
+                        </select>\
+                    </div>\
+                    <div class="space-y-1">\
+                        <label class="block font-bold tracking-wider">FOCUS ALIGNMENT Y</label>\
+                        <select id="art-align-y" class="w-full bg-neutral-50 border border-neutral-200 p-2 focus:outline-none focus:border-black">\
+                            <option value="center">Center</option>\
+                            <option value="top">Top</option>\
+                            <option value="bottom">Bottom</option>\
+                        </select>\
+                    </div>\
+                </div>\
+\
+                <button type="submit" class="w-full bg-black text-white hover:bg-neutral-800 transition-colors p-3.5 tracking-[0.3em] font-bold uppercase">\
+                    Insert into Exhibition / \uc0\u36617 \u20837 \u23637 \u38291 \
+                </button>\
+            </form>\
+        </div>\
+    </section>\
+\
+    <!-- Distraction-free full-screen viewer with sharp edges -->\
+    <div id="lightbox" class="fixed inset-0 bg-white/95 z-50 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-all duration-500 ease-out">\
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-xs tracking-[0.4em] uppercase text-black hover:opacity-50 transition-opacity font-bold">\
+            \uc0\u10005  CLOSE VIEWER\
+        </button>\
+        <div class="max-w-[90vw] max-h-[80vh] flex flex-col justify-center items-center">\
+            <img id="lightbox-image" src="" alt="Expanded View" class="max-h-[75vh] max-w-full object-contain border border-neutral-100 bg-white">\
+            <p id="lightbox-caption" class="mt-4 text-[10px] tracking-[0.3em] uppercase text-neutral-500 text-center font-sans"></p>\
+        </div>\
+    </div>\
+\
+    <div id="toast" class="fixed bottom-6 right-6 bg-black text-white text-[10px] tracking-[0.25em] uppercase px-4 py-3 opacity-0 pointer-events-none transition-all duration-300 z-50">\
+        Notification text\
+    </div>\
+\
+    <script>\
+        // We will crop detailed portions from the 2 provided artworks to make the grid rich and visually diverse!\
+        const defaultArtworks = [\
+            // Row 1: Full-width item 1\
+            \{\
+                id: "art-1",\
+                src: "29C5F2B6-8867-462B-9EBE-3E6E56E234B8.jpg",\
+                title: "Oasis Lake / \uc0\u27700 \u20043 \u27138 \u22290  - Complete",\
+                alignX: "center",\
+                alignY: "center"\
+            \},\
+            // Row 2: 4-Column small items (Using interesting focal crops from both canvases)\
+            \{\
+                id: "art-2",\
+                src: "29C5F2B6-8867-462B-9EBE-3E6E56E234B8.jpg",\
+                title: "Oasis Lake / Yellow Swan Detail",\
+                alignX: "right", // Focuses on the right side of the canvas where the yellow bird sits\
+                alignY: "center"\
+            \},\
+            \{\
+                id: "art-3",\
+                src: "9BCAFB64-14C0-4064-9796-9ADA76E7B6FB.jpg",\
+                title: "Surreal Flight / Majestic Blue Bird Detail",\
+                alignX: "center", // Focuses on the center-top flying bird\
+                alignY: "top"\
+            \},\
+            \{\
+                id: "art-4",\
+                src: "9BCAFB64-14C0-4064-9796-9ADA76E7B6FB.jpg",\
+                title: "Surreal Flight / Sunglasses Character Detail",\
+                alignX: "center",\
+                alignY: "bottom"\
+            \},\
+            \{\
+                id: "art-5",\
+                src: "29C5F2B6-8867-462B-9EBE-3E6E56E234B8.jpg",\
+                title: "Oasis Lake / Pink Mountains Detail",\
+                alignX: "center",\
+                alignY: "bottom"\
+            \},\
+            // Row 3: 2-Column medium items\
+            \{\
+                id: "art-6",\
+                src: "9BCAFB64-14C0-4064-9796-9ADA76E7B6FB.jpg",\
+                title: "Surreal Flight / Cosmic Egg & Snail Detail",\
+                alignX: "left",\
+                alignY: "bottom"\
+            \},\
+            \{\
+                id: "art-7",\
+                src: "9BCAFB64-14C0-4064-9796-9ADA76E7B6FB.jpg",\
+                title: "Surreal Flight / Left Wolf Spirit Detail",\
+                alignX: "left",\
+                alignY: "center"\
+            \},\
+            // Row 4: Full-width item 2\
+            \{\
+                id: "art-8",\
+                src: "9BCAFB64-14C0-4064-9796-9ADA76E7B6FB.jpg",\
+                title: "Surreal Flight / \uc0\u24187 \u24819 \u39131 \u34892 \u33287 \u22818 \u26053 \u20154  - Complete",\
+                alignX: "center",\
+                alignY: "center"\
+            \}\
+        ];\
+\
+        // Portfolio State Tracker\
+        let artworks = [...defaultArtworks];\
+        let localFileBase64 = null;\
+\
+        // Organizes artworks automatically in a sequence of 1 -> 4 -> 2 -> 1 row widths\
+        function renderGrid() \{\
+            const container = document.getElementById('artwork-grid');\
+            container.innerHTML = ''; // Clean current state\
+\
+            let index = 0;\
+            const layoutPattern = [1, 4, 2, 1]; // Layout pattern cycle\
+            let patternIndex = 0;\
+\
+            while (index < artworks.length) \{\
+                // Determine current row size\
+                const currentPatternSize = layoutPattern[patternIndex];\
+                \
+                // Get the block of artworks for this row\
+                const rowItems = artworks.slice(index, index + currentPatternSize);\
+                \
+                // Create row container\
+                const rowDiv = document.createElement('div');\
+                \
+                // Apply responsive column systems matching target photo layout grid\
+                if (currentPatternSize === 1) \{\
+                    rowDiv.className = "w-full grid grid-cols-1";\
+                \} else if (currentPatternSize === 4) \{\
+                    rowDiv.className = "w-full grid grid-cols-2 md:grid-cols-4 gap-1 md:gap-2";\
+                \} else if (currentPatternSize === 2) \{\
+                    rowDiv.className = "w-full grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-2";\
+                \}\
+\
+                rowItems.forEach(item => \{\
+                    const card = createArtworkCard(item, currentPatternSize);\
+                    rowDiv.appendChild(card);\
+                \});\
+\
+                container.appendChild(rowDiv);\
+                \
+                // Advance pointers\
+                index += rowItems.length;\
+                patternIndex = (patternIndex + 1) % layoutPattern.length;\
+            \}\
+        \}\
+\
+        // Helper to output single image card with sharp margins\
+        function createArtworkCard(item, rowSize) \{\
+            const card = document.createElement('div');\
+            \
+            // Layout dimensions based on standard screen ratios\
+            let heightClass = "h-[450px] md:h-[650px]"; // Default for large full-width images\
+            if (rowSize === 4) \{\
+                heightClass = "h-[200px] md:h-[280px]";\
+            \} else if (rowSize === 2) \{\
+                heightClass = "h-[350px] md:h-[480px]";\
+            \}\
+\
+            card.className = `img-container w-full $\{heightClass\} bg-neutral-50 cursor-pointer transition-opacity duration-300 hover:opacity-95`;\
+            card.onclick = () => openLightbox(item.src, item.title);\
+\
+            // Construct image with custom alignment parameters for detailed crops\
+            const img = document.createElement('img');\
+            img.src = item.src;\
+            img.alt = item.title;\
+            img.className = "w-full h-full object-cover";\
+            \
+            // Build absolute focus position mapping\
+            let posX = "50%";\
+            let posY = "50%";\
+            if (item.alignX === "left") posX = "10%";\
+            if (item.alignX === "right") posX = "90%";\
+            if (item.alignY === "top") posY = "10%";\
+            if (item.alignY === "bottom") posY = "90%";\
+            \
+            img.style.objectPosition = `$\{posX\} $\{posY\}`;\
+            \
+            card.appendChild(img);\
+            return card;\
+        \}\
+\
+        // Open Expanded Lightbox with fade animation\
+        function openLightbox(src, title) \{\
+            const lb = document.getElementById('lightbox');\
+            const lbImg = document.getElementById('lightbox-image');\
+            const lbCaption = document.getElementById('lightbox-caption');\
+\
+            lbImg.src = src;\
+            lbCaption.innerText = title;\
+\
+            lb.classList.remove('pointer-events-none', 'opacity-0');\
+            lb.classList.add('opacity-100');\
+        \}\
+\
+        function closeLightbox() \{\
+            const lb = document.getElementById('lightbox');\
+            lb.classList.add('opacity-0', 'pointer-events-none');\
+        \}\
+\
+        // Toggle Studio Panel Visibility\
+        function toggleAdminPanel() \{\
+            const panel = document.getElementById('admin-panel');\
+            panel.classList.toggle('hidden');\
+        \}\
+\
+        // Swaps input forms between Local Upload & Online URLs\
+        function switchInputType(type) \{\
+            const fileWrapper = document.getElementById('file-input-wrapper');\
+            const urlWrapper = document.getElementById('url-input-wrapper');\
+            \
+            if (type === 'file') \{\
+                fileWrapper.classList.remove('hidden');\
+                urlWrapper.classList.add('hidden');\
+            \} else \{\
+                fileWrapper.classList.add('hidden');\
+                urlWrapper.classList.remove('hidden');\
+            \}\
+        \}\
+\
+        // Handle File drag-and-drop or select locally\
+        function handleFileSelect(e) \{\
+            const file = e.target.files[0];\
+            if (!file) return;\
+\
+            const reader = new FileReader();\
+            reader.onload = function(event) \{\
+                localFileBase64 = event.target.result;\
+                const preview = document.getElementById('file-preview');\
+                const dragText = document.getElementById('drag-text');\
+                \
+                preview.src = localFileBase64;\
+                preview.classList.remove('hidden');\
+                dragText.classList.add('hidden');\
+            \};\
+            reader.readAsDataURL(file);\
+        \}\
+\
+        // Handle insertion of a new artwork card to database\
+        function handleNewArtwork(e) \{\
+            e.preventDefault();\
+            \
+            const inputType = document.querySelector('input[name="input_type"]:checked').value;\
+            const title = document.getElementById('art-title').value;\
+            const alignX = document.getElementById('art-align-x').value;\
+            const alignY = document.getElementById('art-align-y').value;\
+            \
+            let finalSrc = "";\
+\
+            if (inputType === 'file') \{\
+                if (!localFileBase64) \{\
+                    showToast("Please choose an image file to upload.");\
+                    return;\
+                \}\
+                finalSrc = localFileBase64;\
+            \} else \{\
+                const urlInput = document.getElementById('art-url').value;\
+                if (!urlInput) \{\
+                    showToast("Please input a valid image URL.");\
+                    return;\
+                \}\
+                finalSrc = urlInput;\
+            \}\
+\
+            // Create new record\
+            const newArt = \{\
+                id: `art-user-$\{Date.now()\}`,\
+                src: finalSrc,\
+                title: title,\
+                alignX: alignX,\
+                alignY: alignY\
+            \};\
+\
+            // Inject into catalog database\
+            artworks.push(newArt);\
+            \
+            // Re-render interface\
+            renderGrid();\
+            \
+            // Clean up states\
+            e.target.reset();\
+            localFileBase64 = null;\
+            document.getElementById('file-preview').classList.add('hidden');\
+            document.getElementById('drag-text').classList.remove('hidden');\
+            \
+            toggleAdminPanel();\
+            showToast("Added successfully. Check the grid pattern!");\
+        \}\
+\
+        // Display minimalist notification feedback\
+        function showToast(text) \{\
+            const toast = document.getElementById('toast');\
+            toast.innerText = text;\
+            toast.classList.remove('opacity-0', 'pointer-events-none');\
+            \
+            setTimeout(() => \{\
+                toast.classList.add('opacity-0', 'pointer-events-none');\
+            \}, 4000);\
+        \}\
+\
+        // Initial launch sequence\
+        window.onload = function() \{\
+            renderGrid();\
+        \}\
+    </script>\
+</body>\
+</html>}
